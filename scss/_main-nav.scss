@@ -1,0 +1,63 @@
+@import "variables";
+
+.navbar {
+  background-color: $background-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: $main-nav-height;
+  z-index: 10;
+  padding: 0;
+  .navbar-toggler {
+    background-color: $secondary-font-color;
+    margin: 20px;
+  }
+  .navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+  }
+  .logo {
+    height: 60px;
+    width: auto;
+    margin: 5px;
+    justify-self: center;
+    align-self: center;
+  }
+  ul {
+    transition: all 0.5s;
+    width: 60%;
+    .li-container {
+      margin-left: 70px;
+      display: flex;
+      width: 70%;
+    }
+
+    li {
+      text-align: center;
+      width: 100px;
+      margin: auto 10px;
+      border-radius: 3px;
+      transition: all 0.5s;
+
+      a {
+        color: $primary-color;
+        transition: all 0.5s;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+    li:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+@media all and (max-width: 420px) {
+    .navbar {
+        position: static;
+        top: 0;
+    }
+}

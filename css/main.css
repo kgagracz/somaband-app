@@ -1,0 +1,167 @@
+.navbar {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  z-index: 10;
+  padding: 0; }
+  .navbar .navbar-toggler {
+    background-color: #fff;
+    margin: 20px; }
+  .navbar .navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b98c3e; }
+  .navbar .logo {
+    height: 60px;
+    width: auto;
+    margin: 5px;
+    justify-self: center;
+    align-self: center; }
+  .navbar ul {
+    transition: all 0.5s;
+    width: 60%; }
+    .navbar ul .li-container {
+      margin-left: 70px;
+      display: flex;
+      width: 70%; }
+    .navbar ul li {
+      text-align: center;
+      width: 100px;
+      margin: auto 10px;
+      border-radius: 3px;
+      transition: all 0.5s; }
+      .navbar ul li a {
+        color: #b98c3e;
+        transition: all 0.5s; }
+      .navbar ul li a:hover {
+        color: #fff; }
+    .navbar ul li:hover {
+      background-color: #b98c3e; }
+
+@media all and (max-width: 420px) {
+  .navbar {
+    position: static;
+    top: 0; } }
+
+.slider-section {
+  min-height: 100vh; }
+  .slider-section .carousel-control-container {
+    height: 100%;
+    background-color: gray;
+    border-radius: 10px; }
+  .slider-section .carousel-control-prev,
+  .slider-section .carousel-control-next {
+    width: 5%;
+    background-color: #b98c3e;
+    opacity: 0.1; }
+  .slider-section .carousel-control-prev:hover,
+  .slider-section .carousel-control-next:hover {
+    opacity: 0.5; }
+  .slider-section .carousel-item img {
+    height: 100vh;
+    object-fit: cover; }
+  .slider-section .carousel-caption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .slider-section .carousel-control-prev-icon,
+  .slider-section .carousel-control-next-icon {
+    padding: 15px; }
+
+#about-us {
+  min-height: 100vh;
+  background-color: #000;
+  margin-top: 80px; }
+  #about-us .container {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between; }
+  #about-us .container__heading {
+    text-align: center;
+    color: #b98c3e;
+    margin: 15px; }
+  #about-us .container__text {
+    color: #fff;
+    margin: 20px; }
+  #about-us .container-inner .party-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #about-us .container-inner .party-container img {
+      width: 100%;
+      object-fit: cover; }
+    #about-us .container-inner .party-container h2 {
+      margin: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff; }
+
+@media all and (max-width: 420px) {
+  #about-us {
+    margin-top: 0; }
+  .container__heading {
+    font-size: 25px;
+    margin: 0; }
+  .container__text {
+    font-size: 10px;
+    margin: 0; }
+  .logo {
+    width: 100%; } }
+
+#contact {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, #020024 0%, #793f09 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #contact address {
+    height: 100%;
+    margin: auto; }
+  #contact .container-fluid {
+    height: 100%; }
+    #contact .container-fluid .footer-logo-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 50%; }
+      #contact .container-fluid .footer-logo-container h2 {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        margin: 20px; }
+      #contact .container-fluid .footer-logo-container .icon-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px; }
+        #contact .container-fluid .footer-logo-container .icon-container .icon-link {
+          margin: 0 20px; }
+          #contact .container-fluid .footer-logo-container .icon-container .icon-link i {
+            color: #b98c3e; }
+          #contact .container-fluid .footer-logo-container .icon-container .icon-link i:hover {
+            color: #fff; }
+
+@media all and (max-width: 420px) {
+  .footer-logo-container__heading {
+    font-size: 1.2rem; }
+  .contact-logo {
+    width: 50%; }
+  .fa-3x {
+    font-size: 2em; } }
+
+.nav-animation {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+  .nav-animation li {
+    display: none; }
+  .nav-animation .logo {
+    height: 300px; }

@@ -1,0 +1,34 @@
+@import "variables";
+
+.slider-section {
+  min-height: 100vh;
+  .carousel-control-container {
+    height: 100%;
+    background-color: gray;
+    border-radius: 10px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    background-color: $primary-color;
+    opacity: 0.1;
+  }
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 0.5;
+  }
+  .carousel-item {
+    img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  .carousel-caption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 15px;
+  }
+}

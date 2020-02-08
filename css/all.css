@@ -1,0 +1,10 @@
+body {
+    height: 200vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+* {
+    transition: all 0.3s;
+	scroll-behavior: smooth;
+}
